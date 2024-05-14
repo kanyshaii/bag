@@ -1,11 +1,9 @@
-import Logo from '../Logo/Logo';
 import './Menu.css';
 import {Link} from 'react-router-dom'
 
 function Menu() {
   return (
     <div className="MenuRow">
-      <Logo/>
     <nav className='Menu'>
       <ul className='flex'>
         <li>

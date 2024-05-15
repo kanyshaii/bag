@@ -1,15 +1,17 @@
-.Menu{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    
+.Menu li{
+    font-weight: 600;
+	font-size: 22px;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
 
-    
 }
-.MenuRow{
-    padding: 16px 0;
+.Menu ul{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFC95C;
-}
+	column-gap: 65px;
+	align-items: center;
+  }
+  .Menu li:hover{
+    border-color: #333;
+  }

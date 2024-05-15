@@ -7,16 +7,16 @@ function Menu() {
     <nav className='Menu'>
       <ul className='flex'>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">HOME</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">ABOUT</Link>
         </li>
         <li>
-          <Link to="/delivery">Delivery</Link>
+          <Link to="/delivery">DELIVERY</Link>
         </li>
         <li>
-          <Link to="/contacts">Contacts</Link>
+          <Link to="/contacts">CONTACTS</Link>
         </li>
       </ul>
     </nav>

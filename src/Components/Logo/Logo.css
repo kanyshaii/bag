@@ -1,0 +1,12 @@
+.Logo{
+    display: flex;
+	align-items: center;
+	column-gap: 13px;
+  }
+ .Logo span{
+    font-weight: 900;
+	font-size: 40px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+ } 

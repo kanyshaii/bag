@@ -16,7 +16,7 @@ function Header() {
             <Button>Sign in</Button>
           </div>
           <Link to="/cart" className="Cart_ic">
-            <span>10</span>
+            <span>20</span>
           </Link>
         </div>
       </div>

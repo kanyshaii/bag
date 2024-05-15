@@ -6,7 +6,6 @@ function Logo() {
   return (
     <Link to ='/' className='Logo'>
       <img src={logo} alt="" />
-      <span>Fashion</span>
     </Link>
   );
 }

@@ -1,4 +1,5 @@
 .Menu li{
+  text-transform: uppercase;
     font-weight: 500;
 	font-size: 22px;
 	line-height: 1.5;
@@ -14,4 +15,15 @@
   }
   .Menu li:hover{
     border-color: #333;
+  }
+  footer .Menu ul{
+    flex-direction: column;
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+  footer .Menu li{
+    margin-bottom: 8px;
+    padding: 3px 0 1px;
+    text-transform: none;
+    font-size: 16px;
   }

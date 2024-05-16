@@ -12,8 +12,8 @@ function Header() {
           <Logo/>
           <Menu />
           <div className="Buttons flex">
-            <Button>Log in</Button>
-            <Button>Sign in</Button>
+            <Button>LOG IN</Button>
+            <Button>SIGN IN</Button>
           </div>
           <Link to="/cart" className="Cart_ic">
             <span>20</span>

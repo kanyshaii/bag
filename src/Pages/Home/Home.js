@@ -16,7 +16,7 @@ function Home() {
 							<span class="highlight highlight--yellow">
 								<span>UNIQUE</span>
 							</span>
-							CLOTHES.
+							BAGS.
 						</div>
 						<div className="promo__desc">
 							Live for Influential and Innovative fashion!

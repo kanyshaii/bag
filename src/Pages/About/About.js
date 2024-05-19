@@ -1,9 +1,8 @@
 import Title from '../../Components/Title/Title';
 import './About.css';
-import aboutImg from '../../img/FURLA.jpg'
+import aboutImg from '../../img/About/about-img.jpg'
 function About() {
   return (
-    <>
     <section className="About">
       <div className="container">
         <Title>ABOUT US</Title>
@@ -42,7 +41,6 @@ sustainability. They have implemented various initiatives to reduce their enviro
         </div>
       </div>
     </section>
-    </>
   );
 }
 

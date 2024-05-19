@@ -11,6 +11,8 @@
 
 	border-radius: 59px;
 	background-color: #f4f6f5;
+	margin-bottom: 50px;
+	padding-bottom: 25px;
 }
 
 
@@ -34,6 +36,7 @@
 	display: flex;
 	column-gap: 34px;
 	align-items: center;
+
 }
 
 .promo__btn-wrapper::before {
@@ -43,13 +46,18 @@
 	height: 32px;
 	/* background-image: url('./../../img/icons/decor-yellow.svg'); */
 }
+.promo__btn:hover{
+	color: #000;
+background-color: #fff;
+border: 1px solid #2c2f24;
+}
 
 .promo__btn {
 	padding: 18px 40px;
 
 	background: #000000;
 	border-radius: 10px;
-
+	transition: 0.3s;
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 1.5;

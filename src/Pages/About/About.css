@@ -1,0 +1,26 @@
+/* .About_in{
+    margin-bottom: 30px;
+  } */
+  .About_img{
+    width: 40%;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  .About_img:hover{
+    transform: scale(1.1);
+  }
+  .About_txt{
+    width: 60%;
+    padding-right: 25px;
+  }
+  .About_bot p{
+    margin-bottom: 20px;
+  }
+  .About_tit{
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .About_txt b{
+    display: block;
+    margin-bottom: 8px;
+  }

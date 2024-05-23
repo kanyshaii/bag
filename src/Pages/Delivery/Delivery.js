@@ -3,11 +3,14 @@ import Delivery1 from '../../img/Delivery/delivery-1.svg'
 import Delivery2 from '../../img/Delivery/delivery-2.svg'
 import Delivery3 from '../../img/Delivery/delivery-3.svg'
 import Delivery4 from '../../img/Delivery/delivery-4.svg'
+import Title from '../../Components/Title/Title';
 
 function Delivery() {
   return (
     <section className='Delivery'>
       <div className="container">
+        <Title>DELIVERY</Title>
+        <div className="Delivery_in">
         <div className="Delivery_grid">
           <div className="Delivery_option">
             <div className="Delivery_img">
@@ -37,6 +40,7 @@ function Delivery() {
             <h2 className="Delivery_tit">24/7 Support</h2>
             <p className="Delivery_txt">Phone and Email support</p>
           </div>
+        </div>
         </div>
       </div>
     </section>

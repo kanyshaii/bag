@@ -3,7 +3,7 @@ import "./CategoryList.css";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import AddCategory from "../AddCategory/AddCategory";
-import DeleteCategory from "../DeleteCategory/DeleteCategory";
+import DeleteCategory from "../DeleteCategory/DeleteCategory.js";
 export default function CategoryList() {
   const { categories } = useContext(AppContext);
   const output = categories.map((category) => (

@@ -18,10 +18,10 @@ import {
 import { createContext, useEffect, useState } from "react";
 import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from './firebase';
 import CategoryList from './Components/CategoryList/CategoryList';
-export const AppContext = createContext ({
+export const AppContext = createContext({
   categories: [],
   products: [],
-  orders:[],
+  orders: [],
   cart: {},
   setCart: () => { },
   user: null,
@@ -29,49 +29,51 @@ export const AppContext = createContext ({
 
 
 function App() {
-  const[categories, setCategories] = useState([]);
-  const[ setProducts] = useState([]);
-  const[orders, setOrders] = useState([]);
-  const[cart] = useState(() => {
+  const [categories, setCategories] = useState([]);
+  const [setProducts] = useState([]);
+  const [orders, setOrders] = useState([]);
+  const [cart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
   const [user, setUser] = useState(null);
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
+
   useEffect(() => {
     onCategoriesLoad(setCategories);
-    onProductsLoad(setProducts);
     onOrdersLoad(setOrders);
+    onProductsLoad(setProducts);
     onAuthChange(user => {
-      if (user){
-        user.isAdmin = user && user.email === "kanyshaibaktybekova07@gmail.com"
+      if (user) {
+        user.isAdmin = user.email === "kemelbekovdaniyar0@gmail.com"
       }
       setUser(user);
-    })
+    });
+
   }, []);
 
   return (
     <div className='App'>
       <AppContext.Provider value={{ categories, cart, user, orders }} >
-      <Router>
-        <Header />
-        <CategoryList/>
-        <main>
-          <div className="container">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="contacts" element={<Contacts />} />
-              <Route path="order" element={<Order />} />
-              <Route path="delivery" element={<Delivery />} />
-              <Route path="cart" element={<Cart />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
-        </main>
-        <Footer />
-      </Router>
+        <Router>
+          <Header />
+          <CategoryList />
+          <main>
+            <div className="container">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="contacts" element={<Contacts />} />
+                <Route path="order" element={<Order />} />
+                <Route path="delivery" element={<Delivery />} />
+                <Route path="cart" element={<Cart />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </div>
+          </main>
+          <Footer />
+        </Router>
       </AppContext.Provider>
     </div>
   );

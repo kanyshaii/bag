@@ -1,5 +1,6 @@
 import './Home.css';
 import promoImg from '../../img/promo.png'
+import video from '../../img/video.mp4'
 
 function Home() {
   return (
@@ -30,6 +31,11 @@ function Home() {
 					<div className="promo__img">
 						<img src={promoImg} alt="Promo" />
 					</div>
+				</div>
+				<div className="Home_video">
+				<video width="100%" height="auto" controls autoPlay muted>
+					<source src={video} type="video/mp4"/>
+					</video>
 				</div>
         </div>
       </div>

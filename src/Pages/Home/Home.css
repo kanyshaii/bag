@@ -91,3 +91,9 @@ border: 1px solid #2c2f24;
     right: -110px;
     background-color: var(--yellow);
 }
+.Home_video{
+	overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  height: 600px;
+}

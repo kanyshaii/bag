@@ -30,9 +30,9 @@ export const AppContext = createContext ({
 
 function App() {
   const[categories, setCategories] = useState([]);
-  const[products, setProducts] = useState([]);
+  const[ setProducts] = useState([]);
   const[orders, setOrders] = useState([]);
-  const[cart, setCart] = useState(() => {
+  const[cart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
   const [user, setUser] = useState(null);

@@ -3,10 +3,15 @@
     font-weight: 500;
 	font-size: 22px;
 	line-height: 1.5;
-	letter-spacing: 0.01em;
-    transition: 0.3s;
-    border-bottom: 2px solid transparent;
-
+	letter-spacing: 0.01em; 
+    border-bottom: 2px solid transparent; 
+    background-image: linear-gradient(to right, #000000, #151515); /* Параметры градиента */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: 10px 2px; /* Линия будет шириной 10px и высотой 2px */
+    background-position: left bottom; /* Положение в левом нижнем углу */
+    padding-bottom: 2px; 
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: 0.3s; 
 }
 .Menu ul{
     display: flex;
@@ -14,7 +19,8 @@
 	align-items: center;
   }
   .Menu li:hover{
-    border-color: #333;
+    /* border-color: #333; */
+    background-size: 100% 2px;
   }
   footer .Menu ul{
     flex-direction: column;

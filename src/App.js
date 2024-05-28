@@ -46,12 +46,12 @@ function App() {
     onProductsLoad(setProducts);
     onAuthChange(user => {
       if (user) {
-        user.isAdmin = user.email === "kemelbekovdaniyar0@gmail.com"
+        user.isAdmin = user.email === "kanyshaibaktybekova07@gmail.com"
       }
       setUser(user);
     });
 
-  }, []);
+  }, [setProducts]);
 
   return (
     <div className='App'>
